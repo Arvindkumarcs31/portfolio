@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arvind portfolie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #6ba4ff;
+        color: white;
+        font-family: "poppins" sans-serif;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: #5795f9;
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 10px;
+      }
+      nav ul li a{
+        text-decoration: none;
+        color:white;
+      }
+      nav ul li a:hover{
+        color: rgb(56, 56, 248);
+       font-size: 1.1rem;
+      }
+      .left {
+        font-size: 1.5rem;
+      }
+      .firstsection {
+        display: flex;
+        justify-content: space-around;
+        margin: 150px 0px;
+      }
+      .firstsection>div {
+        width: 40%;
+        margin-left: 20px;
+      }
+      .leftsection {
+        padding: 10px;
+        font-size: 35px;
+      }
+      .rightsection img {
+        width: 100%;
+        margin: 0;
+      }
+      .purple{
+        color: #073f99;
+      }
+      #element{
+        color: royalblue;
+      }
+      .secendsection{
+        max-width: 80vw;
+        margin-left: 50px;
+      }
+     main hr{
+        border: 0;
+        background-color: black;
+        height: 2px;
+        margin:5px 50px ;
+      }
+      .secendsection h1{
+        font-size: 1.9rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="left">Arvind's porfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="">Home</a></li>        
+            <li><a href="">About</a></li>
+            <li><a href="">Sevice</a></li>
+            <li><a href="">Project</a></li>
+            <li><a href="">Contact me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstsection">
+        <div class="leftsection">
+          Hi my name is <span class="purple">Arvind</span>
+          <div>I am a passionate</div>
+          <span id="element"></span>
+        </div>
+        <div class="rightsection">
+          <img src="pngwing.com.png" alt="image" />
+        </div>
+      </section>
+      <hr>
+      <section class="secendsection">
+        <span class="text-gray">What I have done so far</span>
+       <H1>Work Exprince</H1>
+       <div class="box"></div>
+      </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+      <!-- Element to contain animated typing -->
+  <span id="element"></span>
+
+  <!-- Load library from the CDN -->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Devloper', 'Web Designer'],
+      typeSpeed: 80,
+    });
+  </script>
+</body>
+  </body>
+</html>
